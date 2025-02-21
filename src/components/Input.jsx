@@ -1,3 +1,8 @@
 export default function Input() {
-  // type in task and add to list
+  return (
+    <div className="input">
+      <input type="text" />
+      <button>Add</button>
+    </div>
+  );
 }
