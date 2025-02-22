@@ -1,14 +1,21 @@
 import Input from "./Input";
+import ToDoTask from "./ToDoTask";
 
 export default function ToDoList() {
   return (
-    <>
+    <div className="toDoList">
       <Input />
-      <ul className="toDoList">
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
+      <ul>
+        <li>
+          <ToDoTask />
+        </li>
+        <li>
+          <ToDoTask />
+        </li>
+        <li>
+          <ToDoTask />
+        </li>
       </ul>
-    </>
+    </div>
   );
 }
