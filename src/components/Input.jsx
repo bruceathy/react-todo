@@ -1,6 +1,6 @@
 export default function Input() {
   return (
-    <div className="input">
+    <div className="task-input">
       <input type="text" />
       <button>Add</button>
     </div>

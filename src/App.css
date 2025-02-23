@@ -15,10 +15,11 @@ body {
 
 main {
   background-color: #000000ac;
-  width: 40vw;
+  max-width: 40vw;
   border-radius: 10px;
   padding: 1rem;
   margin-top: 2rem;
+  height: 50vh;
 }
 
 header {
@@ -42,9 +43,15 @@ header h1 {
 .toDoList ul {
   list-style-type: none;
   width: 100%;
+  max-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
+}
+
+.toDoList ul::-webkit-scrollbar {
+  display: none;
 }
 
 .toDoList ul li {
@@ -79,12 +86,36 @@ header h1 {
 }
 
 .delete-btn {
-  background-color: #881313;
+  background-color: #a40000;
   color: #ffffff;
 }
 
 .edit-btn {
   background-color: #000000;
+  color: #ffffff;
+}
+.task-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.task-input input {
+  border: none;
+  width: 80%;
+  border-radius: 5px 0 0 5px;
+  padding: 0.5rem;
+}
+
+.task-input button {
+  border: none;
+  font-weight: bold;
+  width: 15%;
+  border-radius: 0 5px 5px 0;
+  padding: 0.5rem;
+  background-color: #a40000;
   color: #ffffff;
 }
 
@@ -99,12 +130,12 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #881313;
+  background-color: #a40000;
   border: 3px solid #000000;
 }
 
 @media screen and (max-width: 600px) {
   main {
-    width: 80vw;
+    max-width: 80vw;
   }
 }

@@ -6,15 +6,7 @@ export default function ToDoList() {
     <div className="toDoList">
       <Input />
       <ul>
-        <li>
-          <ToDoTask />
-        </li>
-        <li>
-          <ToDoTask />
-        </li>
-        <li>
-          <ToDoTask />
-        </li>
+        <ToDoTask />
       </ul>
     </div>
   );
