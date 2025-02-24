@@ -90,10 +90,19 @@ header h1 {
   color: #ffffff;
 }
 
+.delete-btn:hover {
+  background-color: #650000;
+}
+
 .edit-btn {
-  background-color: #000000;
+  background-color: #008015;
   color: #ffffff;
 }
+
+.edit-btn:hover {
+  background-color: #004713;
+}
+
 .task-input {
   display: flex;
   justify-content: center;
@@ -117,6 +126,11 @@ header h1 {
   padding: 0.5rem;
   background-color: #a40000;
   color: #ffffff;
+}
+
+.task-input button:hover {
+  cursor: pointer;
+  background-color: #650000;
 }
 
 input[type="checkbox"] {
